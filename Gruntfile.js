@@ -1,4 +1,3 @@
-// Basic Gruntfile.js
 module.exports = function (grunt) {
     "use strict";
 
@@ -6,7 +5,7 @@ module.exports = function (grunt) {
         // Typescript compiler options for grunt-ts
         ts: {
             default: {
-                src: ["**/*.ts", "!node_modules/**"]
+                src: ["**/*.ts", "!node_modules/**/*.ts"]
             }
         }
     });
