@@ -16,9 +16,9 @@ gulp.task('less', function () {
 
 // typescript builder
 gulp.task('ts', function () {
-    return gulp.src('./src/scripts/**/*.ts')
+    return gulp.src('./src/**/*.ts')
         .pipe(tsconfig())
-        .pipe(gulp.dest('./public/util'));
+        .pipe(gulp.dest('./public'));
 });
 
 // gulp.task('buildAll', ['build', 'less']);
